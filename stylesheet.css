@@ -1342,9 +1342,34 @@ audio {
 
 
 
-    /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
+    @media only screen and (max-width: 768px){
+        .balloons {
+            width: 70px;
+            height: 95px;
+        }
+        .balloons h2 {
+            font-size: 28px;
+        }
+        .balloons::after {
+            height: 25px;
+            bottom: -25px;
+        }
+        .message p {
+            font-size: 18px;
+        }
+        .btn-primary {
+            padding: 10px 16px;
+            font-size: 14px;
+            margin: 3px;
+            width: 90%;
+        }
+        .navbar-fixed-bottom .row .col-md-6 {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+        }
+        .cake {
+            transform: scale(0.7);
+            margin-left: -100px;
+        }
+    }
