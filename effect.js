@@ -103,9 +103,10 @@ $('document').ready(function(){
 		
 	$('#wish_message').click(function(){
 		var w = $(window).width();
-		var bw = $('#b1').width();
-		var spacing = Math.min(100, (w - 100) / 7);
-		var startX = (w - spacing * 6 - bw) / 2;
+		var bw = w < 768 ? 70 : 100;
+		var spacing = Math.min(80, (w - bw) / 7);
+		var totalW = spacing * 6 + bw;
+		var startX = (w - totalW) / 2;
 		var topPos = Math.min(240, $(window).height() * 0.3);
 
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();
