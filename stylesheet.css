@@ -1084,13 +1084,19 @@ audio {
 	height: 183px;
 	background-repeat: no-repeat no-repeat;
 	background-size: 100px 183px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 50px;
-	color: #BF4136;
-	text-shadow: 5px 5px 5px #FFF;
+	font-size: 40px;
+	color: #FFF;
+	text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+	margin-top: -30px;
+	padding: 2px 6px;
+	line-height: 1;
 }
 #b1,#b11 {
 	background-image: url('b1.png');
