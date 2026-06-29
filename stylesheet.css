@@ -1081,53 +1081,38 @@ audio {
 	opacity: 0.6;
 	z-index: 99;
 	width: 100px;
-	height: 120px;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	box-shadow: inset -10px -10px 20px rgba(0,0,0,0.2);
-}
-.balloons::after {
-	content: '';
-	position: absolute;
-	bottom: -40px;
-	left: 50%;
-	margin-left: -1px;
-	width: 2px;
-	height: 40px;
-	background: rgba(255,255,255,0.4);
+	height: 183px;
+	background-repeat: no-repeat no-repeat;
+	background-size: 100px 183px;
 }
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 36px;
-	color: #FFF;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-	margin: 0;
-	padding: 0;
-	line-height: 1;
+	font-size: 50px;
+	color: #BF4136;
+	text-shadow: 5px 5px 5px #FFF;
+	display: none;
 }
 #b1,#b11 {
-	background: radial-gradient(circle at 30% 30%, #F2B300, #d49a00);
+	background-image: url('b1.png');
 }
 #b2,#b22 {
-	background: radial-gradient(circle at 30% 30%, #e8a0bf, #d47ca3);
+	background-image: url('b2.png');
 }
 #b3,#b33 {
-	background: radial-gradient(circle at 30% 30%, #D14D39, #b33d2b);
+	background-image: url('b3.png');
 }
 #b4,#b44{
-	background: radial-gradient(circle at 30% 30%, #8FAD00, #6f8700);
+	background-image: url('b4.png');
 }
 #b5,#b55{
-	background: radial-gradient(circle at 30% 30%, #8377E4, #6558c9);
+	background-image: url('b5.png');
 }
 #b6,#b66{
-	background: radial-gradient(circle at 30% 30%, #e8a0bf, #d47ca3);
+	background-image: url('b6.png');
 }
 #b7,#b77{
-	background: radial-gradient(circle at 30% 30%, #20CFB4, #17a893);
+	background-image: url('b7.png');
 }
 .balloons-rotate-behaviour-one {
 	-webkit-animation: balloons_rotate_one linear 10s infinite;
