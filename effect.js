@@ -175,11 +175,11 @@ $('document').ready(function(){
 		});
 
 		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+			$("p:nth-child("+i+")").fadeOut('slow').delay(2000).promise().done(function(){
 				i=i+1;
-				$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+				$("p:nth-child("+i+")").fadeIn('slow').delay(1500);
 				if(i >= total){
-					$("p:nth-child("+total+")").delay(2000).fadeOut('slow').promise().done(function () {
+					$("p:nth-child("+total+")").delay(4000).fadeOut('slow').promise().done(function () {
 						$('.cake').fadeIn('fast');
 					});
 				} else {
