@@ -1344,32 +1344,54 @@ audio {
 
     @media only screen and (max-width: 768px){
         .balloons {
-            width: 70px;
-            height: 95px;
+            width: 65px;
+            height: 85px;
         }
         .balloons h2 {
-            font-size: 28px;
+            font-size: 26px;
         }
         .balloons::after {
-            height: 25px;
-            bottom: -25px;
+            height: 20px;
+            bottom: -20px;
+        }
+        .bannar {
+            max-width: 90% !important;
+            margin: 0 auto;
+        }
+        .message {
+            margin-top: 80px;
         }
         .message p {
-            font-size: 18px;
+            font-size: 16px;
         }
         .btn-primary {
-            padding: 14px 20px;
-            font-size: 16px;
-            margin: 4px;
-            width: 95%;
+            padding: 12px 10px;
+            font-size: 14px;
+            margin: 3px;
+            width: 98%;
+            display: block;
+        }
+        .col-md-offset-3 {
+            margin-left: 0 !important;
         }
         .navbar-fixed-bottom .row .col-md-6 {
             width: 100%;
             margin: 0;
-            padding: 0 10px;
+            padding: 0 5px;
         }
         .cake {
-            transform: scale(0.7);
-            margin-left: -100px;
+            transform: scale(0.5);
+            margin-left: -75px;
+        }
+        .bulb-holder {
+            height: 50px;
+        }
+        .bulb {
+            width: 35px !important;
+            height: 35px !important;
+            background-size: 35px 35px !important;
+        }
+        .cake-cover {
+            margin-top: 20px;
         }
     }
