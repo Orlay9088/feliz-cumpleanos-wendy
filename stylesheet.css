@@ -1079,23 +1079,26 @@ audio {
 	position: fixed;
 	bottom: -200px;
 	z-index: 99;
-	width: 100px;
-	height: 183px;
+	width: 130px;
+	height: 240px;
 	background-repeat: no-repeat no-repeat;
-	background-size: 100px 183px;
-	filter: drop-shadow(3px 5px 6px rgba(0,0,0,0.3));
+	background-size: 130px 240px;
+	filter: drop-shadow(4px 6px 8px rgba(0,0,0,0.3));
 	transition: transform 0.3s ease;
 }
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 36px;
+	font-size: 40px;
 	color: #FFF;
-	text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-	display: none;
-	margin-top: -30px;
+	text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+	margin-top: -40px;
 	text-align: center;
 	width: 100%;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 #b1,#b11 {
 	background-image: url('b1.png');
@@ -1296,7 +1299,8 @@ audio {
 
 .btn-primary {
         border-color: #e8a0bf;
-        padding: 10px;
+        padding: 12px 20px;
+        font-size: 16px;
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         font-weight: 700;
