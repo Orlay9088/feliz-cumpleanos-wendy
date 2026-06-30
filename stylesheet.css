@@ -1307,6 +1307,8 @@ audio {
 .message {
 	margin-top: 200px;
 	display: none;
+	position: relative;
+	z-index: 1050;
 }
 .message p {
 	font-family: 'Signika', sans-serif;
@@ -1359,8 +1361,11 @@ audio {
             margin: 0 auto;
         }
         .message {
-            margin-top: 80px;
-            padding-bottom: 200px;
+            margin-top: 60px;
+            padding-bottom: 300px;
+        }
+        .container {
+            padding-bottom: 100px;
         }
         .message p {
             font-size: 16px;
