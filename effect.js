@@ -136,21 +136,20 @@ $('document').ready(function(){
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow').promise().done(function(){
 				var ps = $('.message p');
-				ps.hide();
+				ps.css('opacity', 0).css('position', 'relative').css('top', '15px');
 				var idx = 0;
 				function showNext() {
-					if(idx > 0) ps.eq(idx-1).fadeOut('slow');
 					if(idx >= ps.length) {
 						setTimeout(function(){
 							$('.cake').fadeIn('fast');
 						}, 3000);
 						return;
 					}
-					ps.eq(idx).fadeIn('slow');
+					ps.eq(idx).animate({opacity: 1, top: 0}, 800);
 					idx++;
-					setTimeout(showNext, 2500);
+					setTimeout(showNext, 2000);
 				}
-				setTimeout(showNext, 600);
+				setTimeout(showNext, 500);
 			});
 		});
 	});
