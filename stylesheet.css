@@ -1309,6 +1309,7 @@ audio {
 	display: none;
 	position: relative;
 	z-index: 1050;
+	min-height: 120px;
 }
 .message p {
 	font-family: 'Signika', sans-serif;
@@ -1318,6 +1319,13 @@ audio {
 	text-shadow: 2px 2px 2px rgba(255,255,255,0.3);
 	display: none;
 	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	text-align: center;
+	margin: 0;
 }
 
 .btn-primary {
@@ -1362,7 +1370,7 @@ audio {
         }
         .message {
             margin-top: 260px;
-            padding-bottom: 300px;
+            min-height: 80px;
         }
         .container {
             padding-bottom: 100px;
