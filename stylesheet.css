@@ -1305,7 +1305,7 @@ audio {
 	margin-top: 50px;
 }
 .message {
-	margin-top: 170px;
+	margin-top: 110px;
 	display: none;
 	position: relative;
 	z-index: 1050;
@@ -1398,7 +1398,7 @@ audio {
             margin: 0 auto;
         }
         .message {
-            margin-top: 230px;
+            margin-top: 170px;
             min-height: 80px;
             padding: 32px 10px 10px;
             max-width: 420px;
