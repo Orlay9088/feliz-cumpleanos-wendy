@@ -139,6 +139,7 @@ $('document').ready(function(){
 				ps.hide();
 				var idx = 0;
 				function showNext() {
+					if(idx > 0) ps.eq(idx-1).fadeOut('slow');
 					if(idx >= ps.length) {
 						setTimeout(function(){
 							$('.cake').fadeIn('fast');
