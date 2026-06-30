@@ -133,26 +133,26 @@ $('document').ready(function(){
 	
 	$('#story').click(function(){
 		$(this).fadeOut('slow');
-		var total = $('.message p').length;
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow').promise().done(function(){
-				msgLoop(0);
+				var ps = $('.message p');
+				ps.hide();
+				var idx = 0;
+				function showNext() {
+					if(idx > 0) ps.eq(idx-1).fadeOut('slow');
+					if(idx >= ps.length) {
+						setTimeout(function(){
+							$('.cake').fadeIn('fast');
+						}, 3000);
+						return;
+					}
+					ps.eq(idx).fadeIn('slow');
+					idx++;
+					setTimeout(showNext, 2500);
+				}
+				setTimeout(showNext, 600);
 			});
 		});
-
-		function msgLoop (i) {
-			$("p:nth-child("+i+")").fadeOut('slow').delay(2000).promise().done(function(){
-				i=i+1;
-				$("p:nth-child("+i+")").fadeIn('slow').delay(1500);
-				if(i >= total){
-					$("p:nth-child("+total+")").delay(4000).fadeOut('slow').promise().done(function () {
-						$('.cake').fadeIn('fast');
-					});
-				} else {
-					msgLoop(i);
-				}
-			});
-		}
 	});
 });
 
