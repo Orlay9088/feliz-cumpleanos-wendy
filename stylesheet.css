@@ -1302,7 +1302,7 @@ audio {
 }
 
 .cake-cover {
-	margin-top: 50px;
+	margin-top: 80px;
 }
 .message {
 	margin-top: 200px;
@@ -1398,6 +1398,6 @@ audio {
             background-size: 35px 35px !important;
         }
         .cake-cover {
-            margin-top: 20px;
+            margin-top: 50px;
         }
     }
