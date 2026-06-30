@@ -1310,6 +1310,15 @@ audio {
 	position: relative;
 	z-index: 1050;
 	min-height: 120px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 2px solid rgba(232, 160, 191, 0.5);
+	border-radius: 20px;
+	padding: 40px 20px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	backdrop-filter: blur(4px);
+	box-shadow: 0 8px 32px rgba(0,0,0,0.2);
 }
 .message p {
 	font-family: 'Signika', sans-serif;
@@ -1371,6 +1380,8 @@ audio {
         .message {
             margin-top: 260px;
             min-height: 80px;
+            padding: 20px 15px;
+            max-width: 90%;
         }
         .container {
             padding-bottom: 100px;
