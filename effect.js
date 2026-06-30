@@ -134,7 +134,9 @@ $('document').ready(function(){
 	$('#story').click(function(){
 		$(this).hide();
 		$('.cake').fadeOut('fast');
-		$('.message').show();
+		var balloonTop = parseInt($('#b11').css('top')) || 240;
+		var balloonH = $(window).width() < 768 ? 85 : 130;
+		$('.message').css('margin-top', (balloonTop + balloonH + 30) + 'px').show();
 		var ps = $('.message p');
 		ps.hide();
 		var idx = 0;
