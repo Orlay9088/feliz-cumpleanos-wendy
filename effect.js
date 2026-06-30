@@ -24,7 +24,7 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
+		$(this).fadeOut('slow').delay(4000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
 	});
@@ -39,14 +39,14 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('background-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
 	});
 
 	$('#bannar_coming').click(function(){
 		$('.bannar').addClass('bannar-come');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
 		});
 	});
@@ -81,14 +81,14 @@ $('document').ready(function(){
 		loopBalloon('b6');
 		loopBalloon('b7');
 		
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
+		$(this).fadeOut('slow').delay(4000).promise().done(function(){
 			$('#cake_fadein').fadeIn('slow');
 		});
 	});	
 
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#light_candle').fadeIn('slow');
 		});
 	});
@@ -126,7 +126,7 @@ $('document').ready(function(){
 		$('#b77').animate({top:topPos, left: startX + spacing*6},500);
 		$('.balloons').css('opacity','0.9');
 		$('.balloons h2').fadeIn(3000);
-		$(this).fadeOut('slow').delay(3000).promise().done(function(){
+		$(this).fadeOut('slow').delay(2000).promise().done(function(){
 			$('#story').fadeIn('slow');
 		});
 	});
@@ -139,7 +139,6 @@ $('document').ready(function(){
 				ps.hide();
 				var idx = 0;
 				function showNext() {
-					if(idx > 0) ps.eq(idx-1).fadeOut('slow');
 					if(idx >= ps.length) {
 						setTimeout(function(){
 							$('.cake').fadeIn('fast');
@@ -148,7 +147,7 @@ $('document').ready(function(){
 					}
 					ps.eq(idx).fadeIn('slow');
 					idx++;
-					setTimeout(showNext, 2500);
+					setTimeout(showNext, 2000);
 				}
 				setTimeout(showNext, 600);
 			});
