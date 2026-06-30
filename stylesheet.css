@@ -1360,6 +1360,7 @@ audio {
         }
         .message {
             margin-top: 80px;
+            padding-bottom: 200px;
         }
         .message p {
             font-size: 16px;
