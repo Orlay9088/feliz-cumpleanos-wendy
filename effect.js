@@ -147,7 +147,7 @@ $('document').ready(function(){
 					}
 					ps.eq(idx).fadeIn('slow');
 					idx++;
-					setTimeout(showNext, 2000);
+					setTimeout(showNext, 3000);
 				}
 				setTimeout(showNext, 600);
 			});
