@@ -132,28 +132,25 @@ $('document').ready(function(){
 	});
 	
 	$('#story').click(function(){
-		$(this).fadeOut('slow');
+		$(this).hide();
+		$('.cake').fadeOut('fast');
+		$('.message').show();
 		var ps = $('.message p');
-		var total = ps.length;
-		$('.cake').fadeOut('fast').promise().done(function(){
-			$('.message').fadeIn('slow').promise().done(function(){
-				ps.hide();
-				var idx = 0;
-				function showMsg() {
-					if(idx > 0) ps.eq(idx-1).fadeOut('slow');
-					if(idx >= total) {
-						setTimeout(function(){
-							$('.cake').fadeIn('fast');
-						}, 3000);
-						return;
-					}
-					ps.eq(idx).fadeIn('slow');
-					idx++;
-					setTimeout(showMsg, 2500);
-				}
-				setTimeout(showMsg, 500);
-			});
-		});
+		ps.hide();
+		var idx = 0;
+		function showNext() {
+			if(idx > 0) ps.eq(idx-1).fadeOut('slow');
+			if(idx >= ps.length) {
+				setTimeout(function(){
+					$('.cake').fadeIn('fast');
+				}, 3000);
+				return;
+			}
+			ps.eq(idx).fadeIn('slow');
+			idx++;
+			setTimeout(showNext, 2500);
+		}
+		setTimeout(showNext, 600);
 	});
 });
 
